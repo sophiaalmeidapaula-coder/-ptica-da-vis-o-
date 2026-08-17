@@ -1,0 +1,337 @@
+/* =========================================================
+   ÓPTICA DA VISÃO
+   Folha de estilos principal
+   ========================================================= */
+
+
+/* -------------------------
+   CONFIGURAÇÕES GERAIS
+   ------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4fbff;
+    color: #1f3d50;
+    line-height: 1.7;
+}
+
+
+/* -------------------------
+   CABEÇALHO
+   ------------------------- */
+
+header {
+    background: linear-gradient(135deg, #8ed8f8, #dff6ff);
+    color: #12384d;
+    text-align: center;
+    padding: 50px 20px 30px;
+    border-bottom: 4px solid #55bde8;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+
+/* -------------------------
+   MENU DE NAVEGAÇÃO
+   ------------------------- */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #249bc9;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #147ba5;
+    transform: translateY(-2px);
+}
+
+
+/* -------------------------
+   CONTEÚDO PRINCIPAL
+   ------------------------- */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* -------------------------
+   SEÇÕES
+   ------------------------- */
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(30, 130, 170, 0.10);
+    border-left: 5px solid #68c8ee;
+}
+
+section h2 {
+    color: #1687b5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #c8edf9;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #249bc9;
+    font-size: 1.35rem;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+/* -------------------------
+   LISTAS
+   ------------------------- */
+
+ul,
+ol {
+    margin: 20px 0 20px 25px;
+}
+
+li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+ul li::marker {
+    color: #249bc9;
+}
+
+ol li::marker {
+    color: #1687b5;
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   ARTIGOS SOBRE O OLHO
+   ------------------------- */
+
+article {
+    background-color: #f0faff;
+    padding: 20px;
+    margin: 18px 0;
+    border-radius: 12px;
+    border: 1px solid #c8edf9;
+    transition: 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(36, 155, 201, 0.12);
+}
+
+article h3 {
+    margin-top: 0;
+    color: #137fa9;
+}
+
+
+/* -------------------------
+   DESTAQUES
+   ------------------------- */
+
+strong {
+    color: #147da6;
+}
+
+
+/* -------------------------
+   SEÇÃO DE CURIOSIDADES
+   ------------------------- */
+
+#curiosidades {
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #e8f8ff
+    );
+}
+
+#curiosidades ul {
+    list-style-type: circle;
+}
+
+
+/* -------------------------
+   SEÇÃO DE CONCLUSÃO
+   ------------------------- */
+
+section:last-of-type {
+    border-left-color: #249bc9;
+}
+
+
+/* -------------------------
+   RODAPÉ
+   ------------------------- */
+
+footer {
+    background-color: #126985;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* -------------------------
+   EFEITO DE SELEÇÃO
+   ------------------------- */
+
+::selection {
+    background-color: #8ed8f8;
+    color: #12384d;
+}
+
+
+/* -------------------------
+   RESPONSIVIDADE
+   ------------------------- */
+
+/* Tablets */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 40px 15px 25px;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 13px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    section h3 {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* Celulares */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 20px;
+        border-left-width: 4px;
+        border-radius: 14px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    article {
+        padding: 16px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+}
